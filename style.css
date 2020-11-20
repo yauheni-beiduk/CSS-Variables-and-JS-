@@ -1,28 +1,41 @@
 
-
-.container {
-    display: flex;
-    flex-direction: row;
+:root {
+    --size: 300px;
+    --blur: 0px;
+    --backColor: #f1c7f1;
+    --saturation: 0%;
+    --inversion: 0%;
 }
 
-.filters{
-    position: fixed;
-    width: 40%;
-    min-height: 100%;
-    top: 0;
-    left: 0;
+img {
+    width: var(--size);
+    height: var(--size);
+    filter: blur(var(--blur)) invert(var(--inversion)) saturate(var(--saturation));
+    margin: auto;
+}
+
+body {
+    background-color: var(--backColor);
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin: auto;
+    padding: auto;
+}
+ 
+.filters, .image  {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
+    width: 50%;
+    min-height: 100%;
     overflow: auto;
-    box-sizing: border-box;
-    text-align: left;
     padding: 20px 0 20px 20px;
-    font-size: 2vw;
 }
 
 label {
-    line-height: 40px;
+    line-height: 50px;
 }
 
 input{
@@ -34,15 +47,5 @@ input{
 }
 
 .image {
-    position: fixed;
-    width: 60%;
-    height: 100%;
-    top: 0;
     left: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-    box-sizing: border-box;
-    padding: 20px;
-}
+}  

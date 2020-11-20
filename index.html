@@ -11,22 +11,20 @@
         <div class="filters">
             <h1>Photofilters</h1>
             <label for="size">Size:</label>
-            <input id="size" type="range">
+            <input id="size" type="range" name="size" min="100" max="670" value="300" data-sizing="px">
             <label for="blur">Blur:</label>
-            <input id="blur" type="range">
+            <input id="blur" type="range" name="blur" min="0" max="10" value="0" data-sizing="px">
             <label for="backColor">Background color:</label>
-            <input id="backColor" type="color">
+            <input id="backColor" name="backColor" type="color" value="#417ed0">
             <label for="saturation">Saturation:</label>
-            <input id="saturation" type="range">
+            <input id="saturation" type="range" name="saturation" min="0" max="100" value="0" data-sizing="%">
             <label for="inversion">Inversion:</label>
-            <input id="inversion" type="range">
+            <input id="inversion" type="range" name="inversion" min="0" max="100" value="0" data-sizing="%">
         </div>
-
-
         <div class="image">
-            <img src="/image/gerb.png" alt="images" width="50%">
+            <img src="/image/gerb.png" alt="images" width="500px" height="500px">
         </div>
     </div>
-    
+<script src="main.js"></script>
 </body>
 </html>
