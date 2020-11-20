@@ -40,6 +40,7 @@ label {
 
 input{
     width: 60%;
+    cursor: pointer;
 }
 
 #backColor {
