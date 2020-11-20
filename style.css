@@ -1,0 +1,48 @@
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.filters{
+    position: fixed;
+    width: 40%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 20px 0 20px 20px;
+    font-size: 2vw;
+}
+
+label {
+    line-height: 40px;
+}
+
+input{
+    width: 60%;
+}
+
+#backColor {
+    width: 50px;
+}
+
+.image {
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
