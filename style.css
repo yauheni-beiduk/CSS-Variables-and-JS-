@@ -2,7 +2,7 @@
 :root {
     --size: 300px;
     --blur: 0px;
-    --backColor: rgb(65, 126,208);      /* peremennaja CSS */
+    --backColor: rgb(65, 126,208);      /* variable CSS */
     --saturation: 0%;
     --inversion: 0%;
 }
