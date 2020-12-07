@@ -1,0 +1,52 @@
+
+:root {
+    --size: 300px;
+    --blur: 0px;
+    --backColor: rgb(65, 126,208);      /* variable CSS */
+    --saturation: 0%;
+    --inversion: 0%;
+}
+
+img {
+    width: var(--size);
+    height: var(--size);
+    filter: blur(var(--blur)) invert(var(--inversion)) saturate(var(--saturation));
+    margin: auto;
+}
+
+body {
+    background-color: var(--backColor);
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    margin: auto;
+    padding: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+ 
+.filters, .image  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 50%;
+    min-height: 100%;
+    padding: 20px 0 20px 20px;
+}
+
+label {
+    line-height: 50px;
+}
+
+input{
+    width: 60%;
+    cursor: pointer;
+}
+
+#backColor {
+    width: 50px;
+}
+
+.image {
+    left: 40%;
+}  
